@@ -9,7 +9,7 @@ from bs4 import BeautifulSoup
 
 
 def get_page() -> Tuple[BeautifulSoup, float]:
-    pp_url = "https://www.passportappointment.service.gov.uk/messages/AppointmentsAvailability.html"
+    pp_url = "https://www.passportappointment.service.gov.uk"
     headers = {"User-Agent": "Prawntastic", "From": "beeboop@robot.com"}
     page = requests.get(pp_url, headers=headers)
 
